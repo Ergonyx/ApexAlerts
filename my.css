@@ -1,0 +1,290 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Teko', sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  border: 2px solid red;
+  width: 1280px;
+  height: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.panel {
+  position: absolute;
+  height: 720px;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.wp1 {
+  z-index: 2;
+  width: 1280px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-clip-path: polygon(0 42.5%, 95% 42.5%, 100% 57.5%, 5% 57.5%);
+  clip-path: polygon(0 42.5%, 95% 42.5%, 100% 57.5%, 5% 57.5%);
+  -webkit-animation: inFromRight .1s 1 0s linear;
+          animation: inFromRight .1s 1 0s linear;
+}
+
+.wp2 {
+  z-index: 3;
+  width: 1024px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-clip-path: polygon(0 40.5%, 92% 40.5%, 100% 59%, 8% 59%);
+  clip-path: polygon(0 40.5%, 92% 40.5%, 100% 59%, 8% 59%);
+  -webkit-animation: inFromLeft .1s 1 .02s linear;
+          animation: inFromLeft .1s 1 .02s linear;
+}
+
+.rp {
+  z-index: 4;
+  width: 860px;
+  background: linear-gradient(102deg, rgba(98, 20, 9, 0.75) 7%, rgba(0, 2, 0, 0.75) 48%, rgba(0, 2, 0, 0.75) 49%);
+  -webkit-clip-path: polygon(0 38.5%, 89% 38.5%, 100% 61.5%, 11% 61.5%);
+  clip-path: polygon(0 38.5%, 89% 38.5%, 100% 61.5%, 11% 61.5%);
+  -webkit-animation: inFromRight .1s 1 .04s linear;
+          animation: inFromRight .1s 1 .04s linear;
+}
+
+.bp {
+  z-index: 5;
+  width: 960px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-clip-path: polygon(0 37%, 88% 37%, 100% 64%, 12% 64%);
+  clip-path: polygon(0 37%, 88% 37%, 100% 64%, 12% 64%);
+  -webkit-animation: inFromLeft .1s 1 .05s linear;
+          animation: inFromLeft .1s 1 .05s linear;
+}
+
+.threeBars {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(123.59775deg, #f6bed4 6.13211%, #f9e794 53.16016%, #f6bed4 95.53196%);
+  background: transparent;
+  -webkit-animation: threeBars .1s 1 .17s linear;
+          animation: threeBars .1s 1 .17s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.barLeft {
+  -webkit-clip-path: polygon(22% 25%, 50% 75%, 56% 75%, 28% 25%);
+  clip-path: polygon(22% 25%, 50% 75%, 56% 75%, 28% 25%);
+}
+
+.barCenter {
+  -webkit-clip-path: polygon(28% 15%, 66% 85%, 72% 85%, 34% 15%);
+  clip-path: polygon(28% 15%, 66% 85%, 72% 85%, 34% 15%);
+}
+
+.barRight {
+  -webkit-clip-path: polygon(44% 25%, 72% 75%, 78% 75%, 50% 25%);
+  clip-path: polygon(44% 25%, 72% 75%, 78% 75%, 50% 25%);
+}
+
+.username {
+  position: absolute;
+  width: 674px;
+  height: 160px;
+  text-transform: uppercase;
+  z-index: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.name {
+  -webkit-animation: fadeNameIn .2s 1 .1s linear;
+          animation: fadeNameIn .2s 1 .1s linear;
+  font-size: 60px;
+  text-shadow: 2px 2px #000000;
+  color: #ddd;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.shimmer {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(121.91225deg, rgba(255, 255, 255, 0.5) 21.62151%, white 41.21539%, white 49.91017%, white 61.78896%, rgba(255, 255, 255, 0.506579) 80.40314%, rgba(255, 255, 255, 0.5) 80.40314%);
+  opacity: .5;
+  -webkit-animation: shimmer 1s 1 .3s linear;
+          animation: shimmer 1s 1 .3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeNameIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeNameIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes inFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes inFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes inFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes inFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes threeBars {
+  0% {
+    background: linear-gradient(123.59775deg, white 6.13211%, white 95.53196%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  70% {
+    background: linear-gradient(123.59775deg, white 6.13211%, white 95.53196%);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    background: linear-gradient(123.59775deg, #f6bed4 6.13211%, #f9e794 53.16016%, #f6bed4 95.53196%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes threeBars {
+  0% {
+    background: linear-gradient(123.59775deg, white 6.13211%, white 95.53196%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  70% {
+    background: linear-gradient(123.59775deg, white 6.13211%, white 95.53196%);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    background: linear-gradient(123.59775deg, #f6bed4 6.13211%, #f9e794 53.16016%, #f6bed4 95.53196%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    width: 100px;
+    height: 100%;
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    width: 100px;
+    height: 100%;
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+/*# sourceMappingURL=my.css.map */
