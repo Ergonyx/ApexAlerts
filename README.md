@@ -12,8 +12,8 @@ The large blue glowing effects in the background.  Just like the previously ment
 
 ### My Environment
 
-This was designed to work with a 1280x720 canvas.
-I have some things in pixels and others in percentages.
-I use VSCode and SASS for my CSS.
-Yes, I have multiple CSS files as I have a tendancy to butcher and break my code requiring me to start over.
-Yes, that previous statement does mean that I have no idea how to use git.  I'll get there eventually.
+* This was designed to work with a 1280x720 canvas.
+* I have some things in pixels and others in percentages.
+* I use VSCode and SASS for my CSS.
+* Yes, I have multiple CSS files as I have a tendancy to butcher and break my code requiring me to start over.
+* Yes, that previous statement does mean that I have no idea how to use git.  I'll get there eventually.
