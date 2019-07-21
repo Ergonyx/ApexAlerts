@@ -10,6 +10,8 @@ I simply can't figure out how to do the shimmer/sheen effect.  Even googling exa
 
 The large blue glowing effects in the background.  Just like the previously mentioned effect, I can't make anything work the way I want it to.
 
+There is a video reference file that shows what I'm trying to recreate.
+
 ### My Environment
 
 * This was designed to work with a 1280x720 canvas.
