@@ -3,7 +3,6 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    // background: #303e55;
     background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
@@ -16,9 +15,6 @@ body {
 
 .container {
     z-index: -10;
-    // background: url("testbg2.jpg");
-    background-position: center;
-    background-size: contain;
     border: 2px solid red;
     width: 1280px;
     height: 720px;
@@ -29,7 +25,7 @@ body {
 }
 .wp1 {
     z-index: 0;
-    width: 94%;
+    width: 95%;
     height: 10%;
     opacity: 0;
     // top: 390px;
@@ -152,7 +148,7 @@ body {
     width: 11%;
     height: 1%;
     opacity: 0;
-    top: 512px;
+    top: 522px;
     right: 17.2%;
     position: absolute;
     background: #fff;
@@ -164,7 +160,7 @@ body {
     width: 40.2%;
     height: .4%;
     opacity: 0;
-    top: 512px;
+    top: 522px;
     right: 28.2%;
     position: absolute;
     background: #fff;
